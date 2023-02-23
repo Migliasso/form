@@ -1,0 +1,93 @@
+Inicio de validacion del archivo
+Fin  de validacion del archivo
+Inicio de obtención de correos
+C:\wamp64\tmp\php63D9.tmp
+Fin de obtención de correos
+Inicio lectura del body .html
+Fin lectura del body .html
+Inicio de validacion del archivo
+Fin  de validacion del archivo
+Inicio de obtención de correos
+C:\wamp64\tmp\php9C8F.tmp
+Fin de obtención de correos
+Inicio lectura del body .html
+Fin lectura del body .html
+Inicio de validacion del archivo
+Fin  de validacion del archivo
+Inicio de obtención de correos
+C:\wamp64\tmp\php2583.tmp
+Fin de obtención de correos
+Inicio lectura del body .html
+Fin lectura del body .html
+Inicio de validacion del archivo
+Fin  de validacion del archivo
+Inicio de obtención de correos
+C:\wamp64\tmp\php84A7.tmp
+Fin de obtención de correos
+Inicio lectura del body .html
+Fin lectura del body .html
+Inicio de validacion del archivo
+Fin  de validacion del archivo
+Inicio de obtención de correos
+C:\wamp64\tmp\php24DC.tmp
+Fin de obtención de correos
+Inicio lectura del body .html
+Fin lectura del body .html
+Inicio de validacion del archivo
+Fin  de validacion del archivo
+Inicio de obtención de correos
+C:\wamp64\tmp\php45A0.tmp
+Fin de obtención de correos
+Inicio lectura del body .html
+Fin lectura del body .html
+Inicio de validacion del archivo
+Fin  de validacion del archivo
+Inicio de obtención de correos
+C:\wamp64\tmp\php8496.tmp
+Fin de obtención de correos
+Inicio lectura del body .html
+Fin lectura del body .html
+Inicio de validacion del archivo
+Inicio de validacion del archivo
+Inicio de validacion del archivo
+Fin  de validacion del archivo
+Inicio de obtención de correos
+C:\wamp64\tmp\php906D.tmp
+Fin de obtención de correos
+Inicio lectura del body .html
+Fin lectura del body .html
+Inicio de validacion del archivo
+Fin  de validacion del archivo
+Inicio de obtención de correos
+C:\wamp64\tmp\php5AB6.tmp
+Fin de obtención de correos
+Inicio lectura del body .html
+Fin lectura del body .html
+Inicio de validacion del archivo
+Fin  de validacion del archivo
+Inicio de obtención de correos
+C:\wamp64\tmp\php9C84.tmp
+Fin de obtención de correos
+Inicio lectura del body .html
+Fin lectura del body .html
+Inicio de validacion del archivo
+Fin  de validacion del archivo
+Inicio de obtención de correos
+C:\wamp64\tmp\php79F0.tmp
+Fin de obtención de correos
+Inicio lectura del body .html
+Fin lectura del body .html
+Inicio de validacion del archivo
+Fin  de validacion del archivo
+Inicio de obtención de correos
+C:\wamp64\tmp\php4959.tmp
+Fin de obtención de correos
+Inicio lectura del body .html
+Fin lectura del body .html
+Inicio de validacion del archivo
+Fin  de validacion del archivo
+Inicio de obtención de correos
+C:\wamp64\tmp\phpCDDF.tmp
+Fin de obtención de correos
+Inicio lectura del body .html
+Fin lectura del body .html
