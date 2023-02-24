@@ -14,7 +14,7 @@ try {
     $mensaje = $_FILES["mensaje"]["tmp_name"];
 
     //Validación de archivos
-    file_put_contents("logs.txt", date('Y-m-d H:i:s') . "| Inicio de validacion del archivo" . PHP_EOL, FILE_APPEND);
+    file_put_contents("logs.txt", date('Y-m-d H:i:s') . "Info| Inicio de validacion del archivo" . PHP_EOL, FILE_APPEND);
 
     if (!isset($_FILES["destinos"]) || $_FILES["destinos"]["error"] != UPLOAD_ERR_OK ||
         $_FILES["destinos"]["type"] != "text/plain" || !is_uploaded_file($destinos)) {
@@ -26,12 +26,12 @@ try {
         die("El archivo de mensaje no es válido.");
     }
 
-    file_put_contents("logs.txt", date('Y-m-d H:i:s') . "| Fin  de validacion del archivo" . PHP_EOL, FILE_APPEND);
+    file_put_contents("logs.txt", date('Y-m-d H:i:s') . "Info| Fin  de validacion del archivo" . PHP_EOL, FILE_APPEND);
 
 
     // Obtener correos electrónicos del archivo
 
-    file_put_contents("logs.txt", date('Y-m-d H:i:s') . "| Inicio de obtención de correos" . PHP_EOL, FILE_APPEND);
+    file_put_contents("logs.txt", date('Y-m-d H:i:s') . "Info| Inicio de obtención de correos" . PHP_EOL, FILE_APPEND);
 
     $emails = array();
     $file = fopen($destinos, "r");
@@ -45,7 +45,7 @@ try {
         fclose($file);
     }
 
-    file_put_contents("logs.txt",date('Y-m-d H:i:s') . "| Fin de obtención de correos" . PHP_EOL, FILE_APPEND);
+    file_put_contents("logs.txt",date('Y-m-d H:i:s') . "Info| Fin de obtención de correos" . PHP_EOL, FILE_APPEND);
 
     // Verificar que se obtuvieron correos electrónicos válidos
     if (count($emails) === 0) {
@@ -53,13 +53,10 @@ try {
     }
 
     // Leer archivo de mensaje
-    file_put_contents("logs.txt", date('Y-m-d H:i:s') . "| Inicio lectura del body .html" . PHP_EOL, FILE_APPEND);
+    file_put_contents("logs.txt", date('Y-m-d H:i:s') . "Info| Inicio lectura del body .html" . PHP_EOL, FILE_APPEND);
     $body = file_get_contents($mensaje);
-    file_put_contents("logs.txt", date('Y-m-d H:i:s') . "| Fin lectura del body .html" . PHP_EOL, FILE_APPEND);
+    file_put_contents("logs.txt", date('Y-m-d H:i:s') . "Info| Fin lectura del body .html" . PHP_EOL, FILE_APPEND);
     // Crear el cuerpo del mensaje
-
-    $body = str_replace("{mensaje}", $body);
-
 
     
 
@@ -92,10 +89,10 @@ try {
 
         if($mail->send())
         {
-            file_put_contents("logsCorreosEnviados.txt", date('Y-m-d H:i:s') . "| Correo a " . $email . " enviado exitosamente". PHP_EOL, FILE_APPEND);
+            file_put_contents("logsCorreosEnviados.txt", date('Y-m-d H:i:s') . "Info| Correo a " . $email . " enviado exitosamente". PHP_EOL, FILE_APPEND);
         }else
         {
-            file_put_contents("logsCorreosEnviados.txt", date('Y-m-d H:i:s') . "| Correo a " . $email .  " Fallo | " . $mail->ErrorInfo. PHP_EOL, FILE_APPEND);
+            file_put_contents("logsCorreosEnviados.txt", date('Y-m-d H:i:s') . "Info| Correo a " . $email .  " Fallo | " . $mail->ErrorInfo. PHP_EOL, FILE_APPEND);
         }
 
     }
@@ -107,6 +104,7 @@ try {
     </script>';
 
  }catch (Exception $e) {
+    file_put_contents("logs.txt", date('Y-m-d H:i:s') . " ERROR | Fin lectura del body .html" . PHP_EOL, FILE_APPEND);
     echo "hubo un error al enviar: {$mail->ErrorInfo}";
 }
 ?>
